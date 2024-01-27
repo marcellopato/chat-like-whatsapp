@@ -18,8 +18,9 @@ class Chatbox extends Component
     public $messages;
     public $paginateVar = 10;
     public $height;
+    public $receiverInstance;
+    public $messages_count;
 
-    // protected $listeners = [ 'loadConversation', 'pushMessage', 'loadmore', 'updateHeight', "echo-private:chat. {$auth_id},MessageSent"=>'broadcastedMessageReceived',];
 
 
     public function  getListeners()
@@ -46,7 +47,6 @@ $this->receiverInstance= null;
 
     public function broadcastedMessageRead($event)
     {
-        //dd($event);
 
         if($this->selectedConversation){
 
