@@ -65,7 +65,7 @@ $this->receiverInstance= null;
     /*-----------------------------Broadcasted Event fucntion-------------------------------------------*/
     /*----------------------------------------------------------------------------*/
 
-    function broadcastedMessageReceived($event)
+    public function broadcastedMessageReceived($event)
     {
         ///here 
       $this->emitTo('chat.chat-list','refresh');
@@ -112,7 +112,7 @@ $this->receiverInstance= null;
     /*--------------------------------------------------*/
     /*------------------load More --------------------*/
     /*------------------------------------------------ */
-    function loadmore()
+    public function loadmore()
     {
 
         // dd('top reached ');
@@ -132,7 +132,7 @@ $this->receiverInstance= null;
     /*---------------------------------------------------------------------*/
     /*------------------Update height of messageBody-----------------------*/
     /*---------------------------------------------------------------------*/
-    function updateHeight($height)
+    public function updateHeight($height)
     {
 
         // dd($height);
